@@ -18,10 +18,10 @@ Ensure that you have the following tools installed locally:
 
 ### Deployment
 
-1. Provision resources as they are defined in the `us-east-1` directory using:
+1. Provision resources using:
 
 ```bash
-terraform init -upgrade=true
+terraform init
 terraform apply
 ```
 
@@ -39,7 +39,7 @@ terraform plan # should show `No changes. Your infrastructure matches the config
 
 ```bash
 # First, make sure you have updated your local kubeconfig
-aws eks --region us-east-1 update-kubeconfig --name eks-ref-arch-eks-mng-al2
+aws eks --region us-east-1 update-kubeconfig --name eks-ref-arch-eks-mng-default
 ```
 
 ```bash
